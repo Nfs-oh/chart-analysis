@@ -28294,7 +28294,7 @@
 
           return;
         }
-				debugger;
+				// debugger;
         if (this._disposed) {
           disposedWarning(this.id);
           return;
@@ -28343,6 +28343,7 @@
           this.getZr().wakeUp();
         } else {
           try {
+						// debugger;
             prepare(this);
             updateMethods.update.call(this, null, updateParams);
           } catch (e) {
@@ -29229,7 +29230,7 @@
             });
           },
           update: function (payload, updateParams) {
-						debugger;
+						// debugger;
             var ecModel = this._model;
             var api = this._api;
             var zr = this._zr;
@@ -29674,7 +29675,7 @@
         }
 
         render = function (ecIns, ecModel, api, payload, updateParams) {
-					debugger;
+					// debugger;
           allocateZlevels(ecModel);
           renderComponents(ecIns, ecModel, api, payload, updateParams);
           each(ecIns._chartsViews, function (chart) {
